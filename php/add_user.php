@@ -22,7 +22,7 @@
     VALUES ('$user', '$lowername', '$email', '$password')";
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";
-            header('Location: main.html');
+            header('Location: /main.html');
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
